@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        let classRoom = [
+            "Le Van A",
+            "Nguyen Thi B",
+            "Le Van C",
+            "Pham Thi D",
+        ]
+
+        document.getElementById("demo1").innerHTML = classRoom;
+        classRoom.splice(2, 0, "Luong Xuan K"); //them sinh vien vao mang
+        document.getElementById("demo2").innerHTML = classRoom;
+        classRoom.splice(2, 1); //xoa sinh vien khoi mang
+        document.getElementById("demo3").innerHTML = classRoom;
+        document.getElementById("demo4").innerHTML = classRoom[0].slice(-5); //tach ten Le Van A
+        document.getElementById("demo5").innerHTML = classRoom[0].slice(0, 3); //tach ho Le Van A
+    </script>
+</body>
+
+</html>
